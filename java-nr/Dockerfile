@@ -12,4 +12,4 @@ ENV NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY
 ARG NEW_RELIC_APP_NAME
 ENV NEW_RELIC_APP_NAME=$NEW_RELIC_APP_NAME
 
-CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-javaagent:/opt/newrelic/newrelic.jar", "-jar", "/application/app.jar"] 
+CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-javaagent:/opt/newrelic/newrelic.jar", "-jar", "app.jar"] 
