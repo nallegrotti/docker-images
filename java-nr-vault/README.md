@@ -16,7 +16,7 @@ Using this image as base and don't forget to define license_key and app_name env
 
 ```docker
 
-FROM wenance/java-nr-vault:jre8-nr4.1.0-alpine-v1.0
+FROM wenance/java-nr-vault:jre8-nr4.2.0-alpine-v2.2
 
 WORKDIR /app
 ADD app.jar app.jar
