@@ -1,4 +1,4 @@
-FROM wenance/python-nr:python3.6-alpine3.8-nr3.4.0.95-v1.0
+FROM wenance/python-nr:python3.6-alpine3.8-nr3.4.0.95-v1.1
 
 RUN apk --no-cache add jq curl
 COPY entrypoint-vault.sh /docker-entrypoint-init.d
