@@ -2,13 +2,13 @@
 
 ## To try out manually: 
  
-> docker run --rm -it --entrypoint=ash wenance/java-nr-vault:latest 
+> docker run --rm -it wenance/java-nr-vault:latest ash
 
 ## To run a local java application 
 
 Step into a the path where app.jar is and execute this:
 
-> docker run --rm -d -v $PWD:/app -w /app -e NEW_RELIC_LICESE_KEY="yourlicensekey" -e NEW_RELIC_APP_NAME=yourAppName -e VAULT_URL=yourSecretURL -e VAULT_TOKEN=yourVaultToken wenance/java-nr-vault:latest app.jar
+> docker run --rm -d -v $PWD:/app -w /app -e NEW_RELIC_LICESE_KEY="yourlicensekey" -e NEW_RELIC_APP_NAME=yourAppName -e VAULT_URL=yourSecretURL -e VAULT_TOKEN=yourVaultToken wenance/java-nr-vault:latest
 
 ## To make a custom image 
 
