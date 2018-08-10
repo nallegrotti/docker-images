@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 
 ARG NRA_VERSION=4.2.0 
 
-RUN apk --no-cache add curl unzip jq
+RUN apk --no-cache add curl unzip jq bash
 
 COPY entrypoint-vault.sh /entrypoint/
 RUN chmod +x /entrypoint/entrypoint-vault.sh
