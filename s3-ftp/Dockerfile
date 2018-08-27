@@ -1,4 +1,4 @@
-FROM factual/s3-backed-ftp
+FROM factual/s3-backed-ftp:1.8
 
 ADD s3-fuse.sh /usr/local/
 
