@@ -31,10 +31,8 @@ if [ -z $IAM_ROLE ] && [ ! -z $AWS_ACCESS_KEY_ID ] && [ ! -z $AWS_SECRET_ACCESS_
 fi
 
 # Update the vsftpd.conf file to include the IP address if running on an EC2 instance
-if curl -s http://instance-data.ec2.internal > /dev/null ; then
-  IP=$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
-  sed -i "s/^pasv_address=/pasv_address=$IP/" /etc/vsftpd.conf
-fi
+IP=$(curl mockbin.org/request 2>/dev/null | grep clientIPAddress | sed 's/.*: "//' | sed 's/".*//')
+sed -i "s/^pasv_address=/pasv_address=$IP/" /etc/vsftpd.conf
 
 # start s3 fuse
 # Code above is not needed if the IAM role is attaced to EC2 instance 
