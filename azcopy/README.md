@@ -1,10 +1,12 @@
-From [hawaku/azcopy](https://github.com/hawaku/docker-azcopy)
+# AzCopy on Docker
 
-Extended to use custom MIMETypeMappings
+## From [hawaku/azcopy](https://github.com/hawaku/docker-azcopy) 
+### Extended to use custom MIME Type Mappings
 
-AzCopy on Docker
-Usage
-Copy all blobs to another storage account
+## Usage
+### Copy all blobs to another storage account:
+
+```bash
 docker run -it --rm hawaku/azcopy azcopy \
     --source https://myaccount.blob.core.windows.net/mycontainer1 \
     --destination https://myaccount.blob.core.windows.net/mycontainer2 \
@@ -12,3 +14,4 @@ docker run -it --rm hawaku/azcopy azcopy \
     --dest-key <key>
     --recursive
     --set-content-type
+```
