@@ -13,8 +13,8 @@ RUN apt-get install -y google-chrome-stable
 RUN apt-get install -y xvfb
 
 
-RUN addgroup -S appgroup  && \
- adduser -S appuser -G appgroup
+RUN addgroup appgroup  && \
+ adduser --ingroup appgroup appuser
 
 USER appuser
 
