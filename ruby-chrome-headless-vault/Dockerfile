@@ -15,7 +15,7 @@ RUN apt-get install -y google-chrome-stable
 # headless
 RUN apt-get install -y xvfb
 
-RUN apt-get install jq
+RUN apt-get install -y jq
 
 
 RUN addgroup appgroup  && \
