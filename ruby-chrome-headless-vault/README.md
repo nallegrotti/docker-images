@@ -1,5 +1,5 @@
 # Ruby Chrome Headless with Vault
-
+ 
 This image contains a Google Chrome installed with xvfb to run headlessly.
 
 ## To run a local Ruby application 
