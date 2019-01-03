@@ -1,5 +1,4 @@
-# FROM wenance/node-nr:node8.15.0-nr4.2.0-alpine-v1.0
-FROM wenance/node-nr:latest
+FROM wenance/node-nr:node8.15.0-nr4.2.0-alpine-v1.0
 
 USER root
 RUN apk --no-cache add curl unzip jq
