@@ -5,9 +5,10 @@ COPY docker-entrypoint.sh /etc/sbin/
 RUN chmod +x /etc/sbin/docker-entrypoint.sh
 
 ARG NRA_VERSION=4.2.0 
-RUN apk --update add curl unzip 
+RUN apk --update add libstdc++ make gcc g++ python2
 RUN cd /opt/ && \
- npm install newrelic
+ npm install newrelic && \
+ cp node_modules/newrelic/newrelic.js .
 
 ARG NEW_RELIC_LICENSE_KEY
 ENV NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY
