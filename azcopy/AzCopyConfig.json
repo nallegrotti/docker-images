@@ -1,0 +1,13 @@
+{
+    "MIMETypeMapping": {
+        ".css": "text/css",
+        ".js": "application/javascript",
+        ".htm": "text/html",
+        ".html": "text/html",
+        ".svg" : "image/svg+xml",
+        ".png": "image/png",
+        ".jpeg": "image/jpeg",
+        ".jpg": "image/jpeg",
+        ".gif": "image/gif"
+    }
+}
